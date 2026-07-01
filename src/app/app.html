@@ -51,4 +51,8 @@
 <p *ngIf="showme">can you see me? </p>
 
 <!--attribute directive example *ngClass-->
-
+<p [ngClass]="['primary','big']">Sample text</p>
+<!--based on condition show me is true then apply primary class otherwise not-->
+<p [ngClass]="{'primary':showme}">Sample text-2</p>
+<!--ngStyle-->
+<p [ngStyle] ="{'color': 'red','font-size':'60px'}">ngStyle</p>
